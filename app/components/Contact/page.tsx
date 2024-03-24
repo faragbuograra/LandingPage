@@ -14,7 +14,7 @@ const ContactPart = (props: any) => {
   return (
     <>
       <div className="w-[100vw]">
-        <div className="flex  sm:mx-0 sm:items-center  justify-center w-full  overflow-hiden">
+        <div className="flex  px-1 sm:mx-0 sm:items-center  justify-center w-full  overflow-hiden">
           <div className="flex flex-wrapsm:flex-wrap mt-5 overflow-hiden">
             <div className=" mb-8  sm:mx-0 justify-center w-full">
               <h1 className="text-[30px] sm:text-[50px] font-bold text-center sm:text-center   tracking-tight text-[#2C2C2C]  lg:leading-tight  xl:leading-tight">

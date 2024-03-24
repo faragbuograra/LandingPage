@@ -8,7 +8,7 @@ const Discover = () => {
     <>
   
       <div className="h-[120vh] mt-5 ">
-        <div className="flex  flex-wrap  container   mx-1 sm:mx-auto justify-center  ">
+        {/* <div className="flex  flex-wrap  container   mx-1 sm:mx-auto justify-center  ">
           {[10, 5, 10, 6].map((item, index) => (
             <div className=" mb-8 mx-1 sm:mx-5 justify-center w-[200px]" key={index}>
                 <br></br>
@@ -20,14 +20,26 @@ const Discover = () => {
               </p>
             </div>
           ))}
-        </div>
+        </div> */}
+        <div className="grid  grid-cols-2 sm:grid-cols-4 container  sm:mx-auto justify-items-center">
+  {[10, 5, 10, 6].map((item, index) => (
+    <div className="mb-8 mx-2 sm:mx-5 w-[200px]" key={index}>
+      <h1 className="text-[50px]  sm:text-[50px] font-bold px-2 text-left leading-snug tracking-tight text-[#2C2C2C] lg:leading-tight xl:leading-tight">
+        {item}K
+      </h1>
+      <p className="py-2 text-[14px] ml-5 mx-2 leading-normal text-gray-500">
+        Launched Startups Investment
+      </p>
+    </div>
+  ))}
+</div>
         <div className=" flex   justify-center sm:mx-auto">
         <div className="w-[100vw] sm:w-[80vw]">
           <div className="flex  flex-wrap justify-center sm:justify-between ">
             <div className="mb-5  mx-5  sm:w-[40vw] ">
               <h1 className="text-[30px] sm:text-[50px] font-bold text-center sm:text-left  text-[#2C2C2C]  lg:leading-tight  xl:leading-tight">
                 Discover the Rising<br></br>
-                Stars We ve Backed
+                Stars Weve Backed
               </h1>
             </div>
             <div className="flex items-center justify-center  mx-auto sm:mx-5   w-[280px]">
