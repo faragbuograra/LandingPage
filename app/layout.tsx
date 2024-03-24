@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 
 import "./globals.css";
 import localFont from 'next/font/local'
+import { Providers } from "./providers";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 const  myFont = localFont({
   src: [
@@ -28,7 +31,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={myFont.className}>{children}</body>
+      <body className={myFont.className}>  <Suspense fallback={<Loading />}>
+      <Providers>{children}</Providers>
+        </Suspense> </body>
     </html>
   );
 }

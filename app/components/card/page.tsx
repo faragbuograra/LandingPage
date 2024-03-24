@@ -15,8 +15,8 @@ const CardUi = (props: any) => {
         </p>
         <div className="p-5">
           <ButtonUi
-            bg={"red"}
-            bgSize="[1px]"
+           
+           
           
             name={props.text }
             className={`flex mt-2 justify-center items-center ${props.buttonColor== 'bg-[#ffffff]' ? 'bg-white' : props.buttonColor } w-[145px] h-[54px] sm:h-[45px]  rounded-[2px]  `}

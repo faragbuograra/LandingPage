@@ -1,86 +1,42 @@
 "use client";
 import Image from "next/image";
-import Navbar from "./components/header/page";
-import React, { useState } from "react";
+import Navbar from "./components/navbar/page";
 
-import { contentList } from "./data/content-list";
 import Hero from "./components/hero/page";
 import Page2 from "./components/Investors/page";
 
-import { motion, useViewportScroll, useTransform } from "framer-motion";
 import Discover from "./components/Discover/page";
-import ServicesPart from "./components/Services/ContentUi";
-
+import ServicesPart from "./components/Services/Page";
+import ContactPart from "./components/Contact/page";
+import Footer from "./components/Footer/page";
 
 const Home: React.FC = () => {
-  const [selected, setSelection] = useState<number>(0);
-  const handleClick = (i: number) => setSelection(i);
-  const { scrollYProgress } = useViewportScroll();
-  const options = {
-    // ease: [[0.7, 0, 0.84, 0], [0.7, 0, 0.84, 0], [0.7, 0, 0.84, 0]]
-  };
-  const x = useTransform(scrollYProgress, [0, 0.7, 1], [200, 10, 0], options);
-  const y = useTransform(
-    scrollYProgress,
-    [0, 0.7, 1],
-    [-100, 10, 100],
-    options
-  );
-  const opacity = useTransform(
-    scrollYProgress,
-    [0.2, 0.3, 0.9, 1],
-    [0, 1, 1, 0],
-    options
-  );
-
   return (
     <>
       <div className="App ">
-        <div className="bg-[#010521]">
-          <Navbar selected={selected} handleClick={() => handleClick} />
-          <br></br> <br></br>
-          <section id={"Investors"} className="h-[94vh] ">
+        <div className="bg-[#010521]  h-[100vh] ">
+          <Navbar />
+          <section id={"Investors"} className="h-[100vh] sm:h-auto ">
             <Hero />
           </section>
         </div>
-        <br></br> <br></br>
-        <section id={"Our Story"} className="h-[170vh] sm:h-[180vh]">
-          <div className="lg:hidden">
-            <Page2 />
-          </div>
-         
-          <main className="hidden sm:block div1">
-            <div className="hidden sm:block div1" />
-            <div style={{ height: "100vh" }}>
-              <div className="div2">
-                <div className="container">
-                  <div className="right">
-                    <motion.div
-                      style={{
-                        x,
-                        y,
-                        opacity,
-                      }}
-                    >
-                      <Page2 />
-                    </motion.div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="div3" />
-          </main>
+
+        <section id={"Our Story"} className="h-[170vh] sm:h-auto">
+          <Page2 />
         </section>
-        <section
-          id={"Services"}
-          className="h-[120vh] bg-[#191AFE]"
-        >
+
+        <section id={"Services"} className="h-[80vh] sm:h-auto ">
           <ServicesPart />
         </section>
-        <br></br>
-        <br></br>
-        <section id={"Discover"} className="">
+
+        <section id={"Discover"} className="min-h-[1400px] sm:h-auto">
           <Discover />
+        </section>
+        <section id={"Contact"} className="">
+          <ContactPart />
+        </section>
+        <section id={"Footer"} className="h-[50vh] sm:h-[30vh]">
+          <Footer />
         </section>
       </div>
     </>
@@ -88,38 +44,3 @@ const Home: React.FC = () => {
 };
 
 export default Home;
-interface InputProps {
-  children: string;
-  value: number;
-  set: (newValue: number) => void;
-  min?: number;
-  max?: number;
-}
-
-export function Input({
-  value,
-  children,
-  set,
-  min = -200,
-  max = 200,
-}: InputProps) {
-  return (
-    <label>
-      <code>{children}</code>
-      <input
-        value={value}
-        type="range"
-        min={min}
-        max={max}
-        onChange={(e) => set(parseFloat(e.target.value))}
-      />
-      <input
-        type="number"
-        value={value}
-        min={min}
-        max={max}
-        onChange={(e) => set(parseFloat(e.target.value) || 0)}
-      />
-    </label>
-  );
-}

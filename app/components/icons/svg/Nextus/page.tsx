@@ -3,9 +3,9 @@ import React from "react";
 const Nextus = (props:any) => {
   return (
     <svg
-    width="89"
-    height="703"
-    viewBox="0 0 89 733"
+    width="79"
+    height="503"
+    viewBox="0 0 79 733"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
