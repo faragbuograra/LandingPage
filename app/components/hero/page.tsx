@@ -13,12 +13,12 @@ const Hero = () => {
       <Container className="flex flex-wrap justify-between position-relative ">
         <div className="flex items-center justify-center w-full sm:w-[700px] ">
           <div className=" mb-8 justify-center mt-[100px] sm:mt-[250px] font-bold">
-            <h1 className=" ml-[50px] hidden text-[40px] m-5 font-bold leading-snug tracking-tight text-gray-800 lg:text[70px] lg:leading-tight xl:text-6xl xl:leading-tight sm:text-[40px] dark:text-white lg:flex">
+            <h1 className=" ml-[50px] hidden text-[40px] m-5 font-bold leading-snug tracking-tight  lg:text[70px] lg:leading-tight xl:text-6xl xl:leading-tight sm:text-[40px]text-white lg:flex">
               Welcome<br></br>
               To The Second<br></br>
               Level of the process
             </h1>
-            <h1 className="text-[40px]  text-center  sm:text-[38px] dark:text-white lg:hidden line-clamp-4">
+            <h1 className="text-[40px]  text-center  sm:text-[38px] text-white lg:hidden line-clamp-4">
               Welcome To<br></br>
                The Second  Level<br></br> 
                of the process
