@@ -7,7 +7,7 @@ const Discover = () => {
   return (
     <>
   
-      <div className=" h-[120vh] mt-5 ">
+      <div className="h-[120vh] mt-5 ">
         <div className="flex  flex-wrap  container   mx-1 sm:mx-auto justify-center  ">
           {[10, 5, 10, 6].map((item, index) => (
             <div className=" mb-8 mx-1 sm:mx-5 justify-center w-[200px]" key={index}>
@@ -27,7 +27,7 @@ const Discover = () => {
             <div className="mb-5  mx-5  sm:w-[40vw] ">
               <h1 className="text-[30px] sm:text-[50px] font-bold text-center sm:text-left  text-[#2C2C2C]  lg:leading-tight  xl:leading-tight">
                 Discover the Rising<br></br>
-                Stars We've Backed
+                Stars We ve Backed
               </h1>
             </div>
             <div className="flex items-center justify-center  mx-auto sm:mx-5   w-[280px]">

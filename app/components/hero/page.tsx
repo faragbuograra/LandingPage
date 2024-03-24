@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Container from "./container";
 import ButtonUi from "../botton/page";

@@ -65,14 +65,14 @@ const Page2: React.FC = () => {
                         <p className="py-2 text-[14px] text-center mx-5 leading-normal text-gray-500 ">
                           Lorem Ipsum is simply dummy text of the printing and
                           typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s,
+                          industrys standard dummy text ever since the 1500s,
                           when an unknown printer took a galley of type specimen
                           book.
                         </p>
                         <p className="py-2 text-[14px] text-center leading-normal px-5 text-gray-500 ">
                           Lorem Ipsum is simply dummy text of the printing and
                           typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s,
+                          industrys standard dummy text ever since the 1500s,
                           when an unknown printer took a galley of type specimen
                           book.
                         </p>
