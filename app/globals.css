@@ -10,10 +10,3 @@
   font-weight: normal;
   font-style: normal;
 } */
-.bg-mobile-background {
-  height: 94vh;
-  background-image: url('/mobileBackground.png') !important;
-  background-size: cover; /* Adjust as needed */
-  background-position: center; /* Adjust as needed */
-  /* Add any other styles as needed */
-}

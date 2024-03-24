@@ -9,8 +9,11 @@ import Logo from "../icons/logo/page";
 import { Parallax } from "react-scroll-parallax";
 import { headerData } from "./data";
 import Menu from "../icons/svg/menu/menu";
-// const pages = ["Investors", "Our Story", "Services", "Contact"];
-
+/**
+ *
+ *
+ * @interface PageItem
+ */
 interface PageItem {
   inView?: boolean;
   element?: HTMLElement | null;

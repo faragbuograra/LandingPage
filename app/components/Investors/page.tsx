@@ -1,42 +1,12 @@
-"use client";
+
 import Image from "next/image";
 import ButtonUi from "../botton/page";
 import CardUi from "../card/page";
-import { motion, useScroll, useTransform } from "framer-motion";
+const Investors: React.FC = () => {
 
-const Page2: React.FC = () => {
-  const { scrollYProgress } = useScroll();
-  const options = {
-    // ease: [[0.7, 0, 0.84, 0], [0.7, 0, 0.84, 0], [0.7, 0, 0.84, 0]]
-  };
-  const x = useTransform(scrollYProgress, [0, 0.5, 1], [200, 10, 0], options);
-  const y = useTransform(
-    scrollYProgress,
-    [0, 0.5, 1],
-    [-100, 10, 100],
-    options
-  );
-  const opacity = useTransform(
-    scrollYProgress,
-    [0.1, 0.2, 0.8, 1],
-    [0.5, 1, 1, 1],
-    options
-  );
   return (
-    <>
-    
-     
-      {/* <div className="hidden sm:block "  style={{ height: "100vh" }}>
-        <div className="div2">
-          <div className="container">
-            <div className="right">
-              <motion.div
-                style={{
-                  x,
-                  y,
-                  opacity,
-                }}
-              > */}
+
+   
                 <>
                   <div className="flex flex-wrap-reverse sm:flex-wrap mt-5 overflow-hiden">
                     <div className="flex  mx-3 sm:mx-0 sm:items-center justify-center sm:justify-center w-full lg:w-1/2 overflow-hiden">
@@ -130,13 +100,8 @@ Lorem Ipsum as their default model text, and a search
 for 'lorem ipsum' will."
                     />
                   </div>
-                </>
-              {/* </motion.div>
-            </div>
-          </div>
-        </div>
-      </div> */}
+        
     </>
   );
 };
-export default Page2;
+export default Investors;

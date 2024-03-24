@@ -9,7 +9,7 @@ import { Parallax } from "react-scroll-parallax";
 const Hero = () => {
 
   return (
-    <div className="mx-auto m-auto h-auto">
+    <div className=" mx-auto m-auto h-auto">
       <Container className="flex flex-wrap justify-between position-relative ">
         <div className="flex items-center justify-center w-full sm:w-[700px] ">
           <div className=" mb-8 justify-center mt-[100px] sm:mt-[250px] font-bold">
@@ -40,7 +40,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="flex items-center absolute top-[300px] sm:top-[-230px] right-0 h-[292px] sm:h-[88rem]  w-[350px] sm:w-[850px] ">
+        <div className="flex items-center absolute top-[300px] sm:top-[-230px] right-0 h-[292px] sm:h-[89rem]  w-[350px] sm:w-[850px] ">
           <div className=" h-[292px] sm:h-[600px] overflow-hidden ">
           <Parallax scale={[1, 0.5]}>
           <Image
